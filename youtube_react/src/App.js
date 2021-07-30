@@ -4,6 +4,7 @@ import "./App.css";
 import { indigo } from "@material-ui/core/colors";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
+import NavBar from "./components/NavBar";
 // import NavBar from "./components/NavBar";
 
 // import ApiContextProvider from "./context/ApiContext";
@@ -17,7 +18,7 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: "Comic Neue",
+    fontFamily: '"Comic Neue",cursive',
   },
 });
 
@@ -25,6 +26,7 @@ function App() {
   return (
 
       <ThemeProvider theme={theme}>
+        <NavBar/>
 
       </ThemeProvider>
   );
